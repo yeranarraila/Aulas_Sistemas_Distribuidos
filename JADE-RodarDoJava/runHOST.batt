@@ -1,0 +1,2 @@
+java -classpath .;C:\postgresql-8.4-702.jdbc4.jar;C:\Jade\jade\lib\jade.jar;C:\Jade\jade\lib\migration.jar;C:\Jade\jade\lib\jadeTools.jar;C:\Jade\jade\lib\iiop.jar RunHost %1 %2 %3 %4 %5 %6 %7 %8 %9 
+@pause

@@ -1,0 +1,17 @@
+module LamportCorba{
+
+typedef sequence <Object> Lista;
+typedef sequence <string> ListaS;
+
+	interface Servidor {
+		//somente metodos que serao invocados remotamente
+		
+		long entrarNoSD(in Object servidor, in string key);//adiciona nova maquina ao SD
+		void updateSD(in Lista participantes, in ListaS chaves);//quando novas maquinas sao adicionadas ao SD
+
+		void mensagemDoLider(in long decisao);
+		void mensagemDosMembros(in long decisao);	
+		
+		string requisicao_cliente(in long requisicao); //somente se ele for lider
+		};
+};
